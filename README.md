@@ -8,7 +8,7 @@ An interactive web application that serves as a reference guide to the most used
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=flat&logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-![Screenshot](readme_assets/screenshot.png)
+![Screenshot](readme_assets/example_screenshot.png)
 
 ## ✨ Features
 
