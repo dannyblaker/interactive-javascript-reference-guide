@@ -10,7 +10,7 @@ An interactive web application that serves as a reference guide to the most used
 
 ## ✨ Features
 
-- **📖 25+ JavaScript features**:
+- **📖 21 JavaScript features**:
   - Variables & Data Types
   - Functions (Arrow Functions, Default Parameters, Rest/Spread)
   - Arrays & Objects (Destructuring, Array Methods)
