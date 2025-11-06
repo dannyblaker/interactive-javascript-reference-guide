@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: javascript-guide
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    labels:
+      - "description=JavaScript Reference Guide Web Application"

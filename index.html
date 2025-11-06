@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Reference Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+        id="theme-dark">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+        id="theme-light" disabled>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div>
+                    <h1>📚 JavaScript Reference Guide</h1>
+                    <p class="subtitle">A comprehensive guide to JavaScript language features</p>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search features...">
+                </div>
+                <nav id="featureList" class="feature-list">
+                    <!-- Features will be dynamically loaded here -->
+                </nav>
+            </aside>
+
+            <main class="content-area">
+                <div id="welcomeScreen" class="welcome-screen">
+                    <h2>👋 Welcome to JavaScript Reference Guide</h2>
+                    <p>Select a feature from the left sidebar to view code examples and explanations.</p>
+                    <div class="feature-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" id="totalFeatures">0</span>
+                            <span class="stat-label">Features</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="totalCategories">0</span>
+                            <span class="stat-label">Categories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="featureDisplay" class="feature-display" style="display: none;">
+                    <div class="feature-header">
+                        <h2 id="featureTitle"></h2>
+                        <span class="feature-category" id="featureCategory"></span>
+                    </div>
+                    <p id="featureDescription" class="feature-description"></p>
+
+                    <div class="code-section">
+                        <div class="code-header">
+                            <span class="code-label">Code Example</span>
+                            <button id="copyBtn" class="copy-btn">📋 Copy</button>
+                        </div>
+                        <pre><code id="codeExample" class="language-javascript"></code></pre>
+                    </div>
+
+                    <div id="outputSection" class="output-section" style="display: none;">
+                        <div class="output-header">Output:</div>
+                        <pre id="outputContent" class="output-content"></pre>
+                    </div>
+
+                    <div id="notesSection" class="notes-section" style="display: none;">
+                        <div class="notes-header">💡 Notes:</div>
+                        <ul id="notesList" class="notes-list"></ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="features.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
